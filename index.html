@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    }) (window,document,'script','dataLayer','GTM-TWDLR3PJ');</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <title>Ideal Connecta | Atendimento Inteligente 24/7</title>
+    <meta name="description" content="Transforme o atendimento da sua clínica com IA. Agendamentos automáticos 24/7 via WhatsApp, triagem inteligente e zero perda de leads. Peça seu diagnóstico gratuito.">
+    
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+ 
+    <style>
+/* Estilo Profissional Otimizado - Ideal Connecta */
+body { 
+    font-family: 'Inter', sans-serif; 
+    color: #334155; 
+    scroll-behavior: smooth; 
+   background-color: #020617; /* era #f0f7ff, agora dark */
+      overflow-x: hidden; 
+}
+  
+
+
+h1 { 
+    color: #1e293b;
+    line-height: 1.1 !important; 
+    letter-spacing: -0.02em !important; 
+
+}
+
+/* O "Glass" agora será um card branco executivo (Estilo Apple/Enterprise) */
+.glass { 
+    background: #ffffff; 
+    backdrop-filter: blur(0px); 
+    border: 1px solid #e2e8f0; 
+    border-radius: 24px; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+}
+
+.text-brand { color: #41ae8a; }
+
+/* Botão CTA com Microinteração Suave (Checklist 2) */
+.cta-button-brand { 
+    background: #41ae8a; 
+    color: #ffffff; 
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 14px 0 rgba(65, 174, 138, 0.3); 
+    animation: pulse-soft 2s infinite; /* Pulso mais suave */
+}
+
+/* Hover Animado "Premium" */
+.cta-button-brand:hover { 
+    transform: translateY(-3px) scale(1.02); /* Sobe e cresce levemente */
+    background: #369676; /* Escurece o verde */
+    box-shadow: 0 10px 20px rgba(65, 174, 138, 0.4); /* Sombra maior e mais suave */
+}
+
+/* Nova animação de pulso suave */
+@keyframes pulse-soft {
+    0% { box-shadow: 0 0 0 0px rgba(65, 174, 138, 0.4); }
+    70% { box-shadow: 0 0 0 12px rgba(65, 174, 138, 0); }
+    100% { box-shadow: 0 0 0 0px rgba(65, 174, 138, 0); }
+}
+
+/* Ajuste Mobile */
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem !important; }
+}
+
+/* Transição do Selo Flutuante */
+#scroll-badge {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animação de pulsação suave apenas para o Sticky CTA */
+.cta-sticky-pulse {
+    animation: sticky-pulse 2s infinite;
+}
+
+@keyframes sticky-pulse {
+    0% { box-shadow: 0 0 0 0px rgba(65, 174, 138, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(65, 174, 138, 0); }
+    100% { box-shadow: 0 0 0 0px rgba(65, 174, 138, 0); }
+}
+
+/* Garante que o Sticky CTA fique por cima de tudo */
+#sticky-cta {
+    z-index: 9999;
+}
+
+/* AJUSTES DE RESPONSIVIDADE IDEAL */
+
+/* 1. Trava de segurança para não sobrar espaço lateral */
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* =============================================
+   MOBILE ONLY — max-width: 768px
+   Desktop não é afetado por nenhuma linha aqui
+   ============================================= */
+@media (max-width: 768px) {
+
+    /* Corrige bug iOS com background-attachment fixed */
+    .hero-bg-ai { background-attachment: scroll !important; }
+
+    /* Header compacto */
+    header {
+        padding-top: 1.5rem !important;
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    /* H1 menor e legível */
+    h1 {
+        font-size: 1.9rem !important;
+        line-height: 1.2 !important;
+        word-break: break-word;
+    }
+
+    /* Subtítulo do hero menor */
+    .hero-subtitle { font-size: 0.95rem !important; line-height: 1.6 !important; }
+
+    /* CTA 100% largura e alto o suficiente pro dedo */
+    .cta-button-brand {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+        font-size: 1rem !important;
+        padding-top: 1.1rem !important;
+        padding-bottom: 1.1rem !important;
+        min-height: 52px !important;
+    }
+
+    /* Imagens não estouram */
+    img { max-width: 100% !important; height: auto !important; }
+
+    /* Grids com gap menor */
+    .grid { gap: 1rem !important; }
+
+    /* Seção soluções compacta */
+    #solucoes {
+        padding: 1.25rem !important;
+        border-radius: 28px !important;
+        margin-left: 0.75rem !important;
+        margin-right: 0.75rem !important;
+    }
+
+    /* Cards internos compactos */
+    #solucoes .bg-white {
+        padding: 1.25rem !important;
+        border-radius: 20px !important;
+    }
+
+    /* Formulário compacto no mobile */
+    #diagnostico > div {
+        padding: 1.25rem !important;
+        border-radius: 28px !important;
+    }
+
+    /* Inputs com fonte mínima 16px — evita zoom automático do iOS */
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+
+    /* Padding inferior da página para não ficar atrás do sticky bar */
+    footer { padding-bottom: 5rem !important; }
+    #diagnostico { padding-bottom: 5rem !important; }
+
+    /* Seções com menos respiro vertical */
+    section { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+
+    /* Botão WhatsApp sobe acima do sticky bar */
+    #btn-wpp-float { bottom: 76px !important; }
+
+    /* Ativa o sticky bar */
+    #sticky-cta-bar { display: flex !important; }
+}
+
+/* STICKY CTA BAR — oculto por padrão, só aparece no mobile via media query acima */
+#sticky-cta-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+    padding: 10px 16px;
+    background: rgba(2, 6, 23, 0.97);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* 3. Ajuste fino na Nav para centralizar e dar respiro */
+nav {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+/* BOTÃO FLUTUANTE WHATSAPP */
+@keyframes wpp-pulse {
+    0%   { box-shadow: 0 0 0 0px rgba(37,211,102,0.5); }
+    70%  { box-shadow: 0 0 0 16px rgba(37,211,102,0); }
+    100% { box-shadow: 0 0 0 0px rgba(37,211,102,0); }
+}
+
+.hero-bg-ai {
+    position: relative;
+    background: linear-gradient(rgba(2,6,23,0.70), rgba(2,6,23,0.95)),
+    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+}
+
+/* Seção soluções — CONFIGURAÇÃO FINAL */
+#solucoes {
+   background: rgba(255,255,255,0.70) !important;
+    border-color: rgba(255,255,255,0.3) !important;
+}
+
+
+#solucoes h2  {
+    color: #1e3a5f !important;
+}
+
+
+#solucoes .text-brand {
+    color: #41ae8a!important;
+}
+
+#solucoes .inline-block {
+    color: #41ae8a!important;
+}
+
+#solucoes ul li {
+    color: #1e3a5f !important;
+    font-style: italic;
+}
+
+
+#solucoes .bg-white {
+    background: #ffffff !important;
+    border-color: #e2e8f0 !important;
+}
+
+#solucoes .bg-white span.text-red-600 {
+    color: #dc2626 !important;
+}
+
+#solucoes .bg-white .text-slate-800,
+#solucoes .bg-white .text-slate-900,
+#solucoes .bg-white .font-bold,
+#solucoes .bg-white .font-black {
+    color: #1e293b !important;
+}
+
+#solucoes .bg-white .text-slate-500,
+#solucoes .bg-white p {
+    color: #475569 !important;
+}
+
+.step-number {
+    text-shadow: 0 0 20px rgba(65,174,138,0.6), 0 0 40px rgba(65,174,138,0.3);
+}
+
+
+</style>
+</head>
+<body class="hero-bg-ai min-h-screen">
+
+<div id="scroll-badge" class="fixed top-24 right-6 bg-white shadow-2xl rounded-2xl p-4 z-[60] border border-slate-100 transition-all duration-500 opacity-0 md:block hidden">
+    <div class="relative">
+        <p class="text-[#41ae8a] font-black text-xl leading-none text-center">98%</p>
+        <p class="text-slate-400 text-[8px] uppercase font-bold text-center">Satisfação</p>
+        <span class="absolute -top-1 -right-1 flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#41ae8a] opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#41ae8a]"></span>
+        </span>
+    </div>
+</div>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWDLR3PJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="w-full bg-[#020617]/90 backdrop-blur-md border-b border-white/10 sticky top-0 z-[100] py-2 md:py-3 px-6">
+    <div class="container mx-auto px-4 flex flex-col items-center justify-center text-center">
+        <div class="text-xl md:text-2xl font-black italic uppercase text-white leading-none">
+            IDEAL<span class="text-[#41ae8a] font-light lowercase">Connecta</span>
+        </div>
+    </div>
+</nav>
+    
+
+      
+<header class="container mx-auto px-6 pt-6 pb-8 md:pt-24 md:pb-18" data-aos="fade-up">
+    <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-7 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-orange-50 border border-orange-100 shadow-sm">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                </span>
+                <span class="text-orange-700 text-[10px] font-black uppercase tracking-widest">
+                    Faça testes gratuitos 
+                </span>
+            </div>
+            
+            <h1 class="text-4xl md:text-7xl font-black mb-8 uppercase leading-tight text-slate-100" data-aos="fade-up">
+                <!-- Desktop: versão atual -->
+                <span class="hidden md:inline">
+                    <span class="text-brand">Automatize seu atendimento e</span><br>
+                    recupere até 37% dos leads perdidos<br>
+                    <span class="text-brand">sem aumentar sua equipe</span>
+                </span>
+                <!-- Mobile: versão curta e direta -->
+                <span class="md:hidden">
+                    Automatize seu atendimento<br>
+                    <span class="text-brand">e recupere até 37% dos leads</span>
+                </span>
+            </h1>
+            
+            <p class="text-slate-300 text-lg md:text-xl max-w-xl mb-10 font-medium" data-aos="fade-up" data-aos-delay="200">
+                <!-- Desktop -->
+                <span class="hidden md:inline">Atendimento automático que responde em menos de 5 segundos,
+quebra objeções e leva o cliente até o agendamento</span>
+                <!-- Mobile: frase de dor direta -->
+                <span class="md:hidden">Enquanto você demora para responder,<br>seu concorrente fecha o cliente.</span>
+            </p>
+            
+            <div class="space-y-4">
+                <a href="#diagnostico" class="cta-button-brand text-center font-black uppercase tracking-widest px-8 py-5 rounded-2xl text-base md:text-lg block md:inline-block max-w-[320px] md:max-w-none mx-auto md:mx-0 shadow-2xl">
+                    <span class="hidden md:inline">Quero recuperar meus leads perdidos →</span>
+                    <span class="md:hidden">Quero mais clientes agora →</span>
+                </a>
+                
+                <p class="text-slate-300 text-[11px] font-medium flex items-center justify-center md:justify-start gap-2">
+                    <svg class="w-3 h-3 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M2.166 4.9L10 1.154l7.834 3.746v5.203c0 5.091-3.342 9.845-7.834 11.231-4.492-1.386-7.834-6.14-7.834-11.231V4.9zM10 3.14L4 6.013v4.29c0 4.105 2.556 7.954 6 9.123 3.444-1.169 6-5.018 6-9.123v-4.29L10 3.14z" clip-rule="evenodd"/>
+                    </svg>
+                    Sem compromisso • Resposta em até 5 minutos • Sem spam
+                </p>
+            </div>
+        </div>
+        
+        <div class="md:col-span-5 hidden md:block">
+            <div class="relative">
+                
+               <img src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=900"
+     class="w-full rounded-[40px] border border-white shadow-2xl" 
+     alt="Tecnologia Ideal Connecta"
+     fetchpriority="high">
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section id="solucoes" class="container mx-auto px-6 py-12 bg-white/40 rounded-[60px] border border-blue-50/50 my-6">
+    <div class="text-center mb-12 max-w-3xl mx-auto">
+        <div class="inline-block bg-brand/10 text-brand text-[13px] font-bold uppercase tracking-[.2em] px-4 py-1.5 rounded-full mb-4">
+            Por que empresas estão migrando para IA?
+        </div>
+        <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight text-[#020617] mb-4 leading-[1.1]">
+           Se sua empresa depende de <br>
+<span class="text-brand">WhatsApp,</span> isso está acontecendo agora:
+        </h2>
+        <ul class="hidden md:block mt-4 space-y-2 text-slate-300 font-bold text-lg italic list-none">
+    <li>→ "Seu lead entra → demora → esfria → compra do concorrente"</li>
+    <li>→ "Você paga por tráfego e perde no atendimento"</li>
+    <li>→ "Sua equipe vira suporte, não vendedor"</li>
+</ul>
+        <!-- Mobile: versão escaneável com bullets -->
+        <div class="md:hidden mt-4 space-y-2 text-left">
+            <p class="text-[#1e3a5f] font-bold text-base">Se você usa WhatsApp no seu negócio, isso está acontecendo:</p>
+            <div class="space-y-1 text-[#1e3a5f] text-sm font-semibold mt-3">
+                <p>❌ Demora para responder</p>
+                <p>❌ Lead esfria e some</p>
+                <p>❌ Compra do concorrente</p>
+                <p>❌ Você paga tráfego e perde no atendimento</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 items-stretch">
+        <div class="group p-8 rounded-[40px] bg-white border-2 border-red-500/20 shadow-2xl shadow-red-500/10 relative overflow-hidden transition-all duration-500 hover:scale-[1.01] hover:border-red-500 hover:shadow-[0_0_20px_rgba(239,68,68,0.8)]">
+            <div class="absolute top-0 left-0 w-2 h-full bg-red-600"></div>
+            
+            <h3 class="text-red-600 font-black uppercase text-[11px] tracking-widest mb-8 mt-14 md:mt-0 md:pt-8 flex items-center gap-2">
+                <span class="p-2 bg-red-100 rounded-lg">⚠️</span> O Gargalo da Operação Humana
+            </h3>
+            
+            <ul class="space-y-6 text-slate-500">
+                <li class="flex items-start gap-4">
+                    <span class="text-red-600 font-black text-xl leading-none pt-1">✕</span>
+                    <div>
+                        <p class="font-bold text-slate-800">Janela de Abandono (After Hours)</p>
+                        <p class="text-sm leading-relaxed">62% dos leads chegam fora do horário comercial. Sem resposta imediata, o cliente clica no próximo anúncio do Google em menos de 3 minutos.</p>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4 pt-6 border-t border-slate-50">
+                    <span class="text-red-600 font-black text-xl leading-none pt-1">✕</span>
+                    <div>
+                        <p class="font-bold text-slate-800">Equipe perde tempo com perguntas repetitivas.</p>
+                        <p class="text-sm leading-relaxed">Sua recepção gasta 40% do dia respondendo perguntas repetitivas ao em vez de focar no fechamento de vendas e negócios de alto valor.</p>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4 pt-6 border-t border-slate-50">
+                    <span class="text-red-600 font-black text-xl leading-none pt-1">✕</span>
+                    <div>
+                        <p class="font-bold text-slate-800">Falta de follow-up faz você perder vendas todos os dias</p>
+                        <p class="text-sm leading-relaxed">Leads que não agendam na hora raramente recebem um novo contato, resultando em um "balde furado" no seu investimento em anúncios.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="group p-8 rounded-[40px] bg-white border-2 border-[#41ae8a]/20 shadow-2xl shadow-[#41ae8a]/10 relative overflow-hidden transition-all duration-500 hover:scale-[1.01] hover:border-[#41ae8a] hover:shadow-[0_0_20px_rgba(65,174,138,0.8)]">
+    
+    
+    <div class="absolute top-6 right-8 bg-[#41ae8a] text-white text-[9px] font-white uppercase px-3 py-1 rounded-full animate-pulse z-10">
+        Padrão Ideal Connecta
+    </div>
+    
+    <div class="mt-12 md:mt-0 md:pt-8">
+        <h3 class="text-[#41ae8a] font-black uppercase text-[11px] tracking-widest mb-8 flex items-center justify-center md:justify-start gap-2">
+            <span class="p-2 bg-[#41ae8a]/10 rounded-lg flex-shrink-0">🚀</span> 
+            Atendimento de Alta Performance
+        </h3>
+        
+        <ul class="space-y-6 text-slate-800">
+            <li class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-5 h-5 bg-[#41ae8a] rounded-full flex items-center justify-center mt-1">
+                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-black text-slate-900 leading-snug">Atendimento automático 24/7 em todos os canais</p>
+                    <p class="text-sm text-slate-500 font-medium leading-relaxed">Atendimento instantâneo em feriados e madrugadas. A IA qualifica o lead e já entrega o horário disponível na agenda.</p>
+                </div>
+            </li>
+
+            <li class="flex items-start gap-4 pt-6 border-t border-slate-100">
+                <div class="flex-shrink-0 w-5 h-5 bg-[#41ae8a] rounded-full flex items-center justify-center mt-1">
+                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-black text-slate-900 leading-snug">Integração com CRM/agenda e funil de vendas</p>
+                    <p class="text-sm text-slate-500 font-medium leading-relaxed">Sincronização em tempo real. A IA sabe exatamente quais lacunas preencher para otimizar o faturamento por hora da sua empresa.</p>
+                </div>
+            </li>
+
+            <li class="flex items-start gap-4 pt-6 border-t border-slate-100">
+                <div class="flex-shrink-0 w-5 h-5 bg-[#41ae8a] rounded-full flex items-center justify-center mt-1">
+                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-black text-slate-900 leading-snug">IA que conversa, entende e conduz para conversão</p>
+                    <p class="text-sm text-slate-500 font-medium leading-relaxed">Não é um "robô de opções". É uma conversa fluida que entende a necessidade do cliente e conduz para o proximo passo com naturalidade.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+
+<section class="container mx-auto px-6 py-10">
+    <div class="grid md:grid-cols-3 gap-6 text-center max-w-4xl mx-auto">
+        <div>
+            <p class="text-4xl font-black">
+                <span class="text-slate-100 text-2xl font-semibold">Até - </span>
+                <span class="text-brand">+37%</span>
+            </p>
+            <p class="text-slate-300">Mais conversão</p>
+        </div>
+        <div>
+            <p class="text-4xl font-black">
+                <span class="text-slate-100 text-2xl font-semibold">Até - </span>
+                <span class="text-brand"> 82%</span>
+            </p>
+            <p class="text-slate-300">Tempo de resposta</p>
+        </div>
+        <div>
+            <p class="text-4xl font-black">
+                <span class="text-slate-100 text-2xl font-semibold">Até - </span>
+                <span class="text-brand">2x</span>
+            </p>
+            <p class="text-slate-300">Mais leads aproveitados</p>
+        </div>
+    </div>
+</section>
+
+<section class="container mx-auto px-6 py-20">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight text-slate-100">
+    Essas conversas estão acontecendo <span class="text-brand">todos os dias</span>
+</h2>
+
+<p class="text-slate-300 mt-4 font-medium">Enquanto você dorme ou está ocupado, a IA responde, negocia e fecha clientes no WhatsApp.</p>
+    </div>
+
+    
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white rounded-[32px] border border-slate-200 overflow-hidden shadow-2xl">
+            <img src="print-wpp1.jpeg" data-aos="zoom-in" alt="IA enviando promoções" class="w-full h-auto block" onerror="this.style.display='none';">
+            <div class="p-4 bg-slate-50 border-t border-slate-100 text-[10px] uppercase font-black tracking-widest text-brand text-center">
+                Envio automático de catálogo e preços
+            </div>
+        </div>
+
+        <div class="bg-white rounded-[32px] border border-slate-200 overflow-hidden shadow-2xl">
+            <img src="print-wpp2.jpeg" data-aos="zoom-in" data-aos-delay="200" alt="IA explicando procedimento" class="w-full h-auto block" onerror="this.style.display='none';">
+            <div class="p-4 bg-slate-50 border-t border-slate-100 text-[10px] uppercase font-black tracking-widest text-brand text-center">
+                Quebra de objeções e fechamento
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resultados" class="container mx-auto px-6 py-10 md:py-20">
+    <div class="text-center mb-8 md:mb-16">
+        <div class="inline-block bg-brand/10 text-brand text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+            Casos de Sucesso
+        </div>
+        <h2 class="text-2xl md:text-5xl font-black uppercase tracking-tight text-slate-100">
+            Aprovado por <span class="text-brand">Especialistas</span>
+        </h2>
+        <p class="text-slate-300 mt-3 text-sm md:text-base font-medium italic">Resultados reais de quem já automatizou o crescimento.</p>
+    </div>
+
+   <div class="grid md:grid-cols-2 gap-4 md:gap-8 mb-8 md:mb-16">
+    <div class="bg-white p-6 md:p-10 rounded-[24px] md:rounded-[40px] border border-slate-100 shadow-sm hover:shadow-md transition-shadow relative group">
+        <svg class="absolute top-4 left-4 md:top-6 md:left-6 w-6 h-6 md:w-8 md:h-8 text-brand/10 group-hover:text-brand/20 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v8h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v8h-9.983z"/>
+        </svg>
+
+        <p class="text-slate-600 text-sm md:text-lg italic mb-4 md:mb-8 relative z-10 leading-relaxed font-medium pt-3 pl-5 md:pt-4 md:pl-6">
+            O impacto no faturamento foi imediato. Aumentamos nossas vendas em 22% logo no primeiro mês, sem contratar ninguém a mais."
+        </p>
+
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 md:w-14 md:h-14 bg-slate-50 rounded-xl md:rounded-2xl flex items-center justify-center p-1.5 md:p-2 border border-slate-100 shadow-inner flex-shrink-0">
+                <img src="logo-odonto.png" alt="Logo Odonto" class="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all">
+            </div>
+            <div>
+                <p class="text-slate-800 font-black text-xs md:text-sm uppercase tracking-wider">Ricardo Mendes</p>
+                <p class="text-slate-400 text-[10px] md:text-[11px] font-bold uppercase tracking-tighter">Sócio-Diretor • Auto Mil</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 md:p-10 rounded-[24px] md:rounded-[40px] border border-slate-100 shadow-sm hover:shadow-md transition-shadow relative group">
+        <svg class="absolute top-4 left-4 md:top-6 md:left-6 w-6 h-6 md:w-8 md:h-8 text-brand/10 group-hover:text-brand/20 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v8h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v8h-9.983z"/>
+        </svg>
+
+        <p class="text-slate-600 text-sm md:text-lg italic mb-4 md:mb-8 relative z-10 leading-relaxed font-medium pt-3 pl-5 md:pt-4 md:pl-6">
+            A IA cuida de toda a parte burocrática de confirmação e dúvidas frequentes com perfeição. Minha recepção agora foca em vender."
+        </p>
+
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 md:w-14 md:h-14 bg-slate-50 rounded-xl md:rounded-2xl flex items-center justify-center p-1.5 md:p-2 border border-slate-100 shadow-inner flex-shrink-0">
+                <img src="logo-estetica.png" alt="Logo Estética" class="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all">
+            </div>
+            <div>
+                <p class="text-slate-800 font-black text-xs md:text-sm uppercase tracking-wider">Dra. Mariana Costa</p>
+                <p class="text-slate-400 text-[10px] md:text-[11px] font-bold uppercase tracking-tighter">Fundadora • Mariflor Estética</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="text-center">
+        <a href="#diagnostico" class="inline-flex flex-col items-center group gap-4">
+            <span class="cta-button-brand px-10 py-5 rounded-2xl font-black uppercase text-lg shadow-xl group-hover:scale-105 transition-transform">
+                Quero resultados assim também!
+            </span>
+        
+        </a>
+    </div>
+
+    <section class="container mx-auto px-6 py-16">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-5xl font-black text-slate-100 uppercase">
+      Como funciona na prática
+    </h2>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-6 text-center text-slate-300">
+    <div>
+      <p class="text-5xl font-black text-brand mb-2 step-number">1</p>
+      <p class="text-lg font-semibold flex items-center justify-center gap-2">
+        <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        </svg>
+        Cliente chama no WhatsApp
+      </p>
+    </div>
+    <div>
+      <p class="text-5xl font-black text-brand mb-2 step-number">2</p>
+      <p class="text-lg font-semibold flex items-center justify-center gap-2">
+        <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        </svg>
+        IA responde em segundos e qualifica
+      </p>
+    </div>
+    <div>
+      <p class="text-5xl font-black text-brand mb-2 step-number">3</p>
+      <p class="text-lg font-semibold flex items-center justify-center gap-2">
+        <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        </svg>
+        Agenda automaticamente ou faz follow-up
+      </p>
+    </div>
+  </div>
+</section>
+
+</section>
+<main id="diagnostico" class="container mx-auto px-6 py-4">
+    <div class="bg-slate-900 rounded-[50px] p-8 md:p-16 text-white relative overflow-hidden shadow-2xl border border-white/5">
+        
+        <div class="max-w-3xl mx-auto relative z-10 text-center">
+
+            <!-- Quebra de objeção — só no mobile, antes do form -->
+            <div class="md:hidden mb-6 p-4 rounded-2xl border border-white/10 bg-white/5">
+                <p class="text-slate-300 text-sm font-semibold leading-relaxed">
+                    Você já paga por leads.<br>
+                    <span class="text-[#41ae8a] font-bold">O problema não é tráfego — é o atendimento.</span>
+                </p>
+            </div>
+            
+            <h2 class="text-3xl md:text-5xl font-black uppercase mb-6 leading-tight mx-auto">
+                <!-- Desktop -->
+                <span class="hidden md:inline">Descubra quanto <span class="text-[#41ae8a]">Dinheiro</span> <br>sua empresa perde por não responder ao WhatsApp</span>
+                <!-- Mobile -->
+                <span class="md:hidden text-2xl">Receba seu <span class="text-[#41ae8a]">diagnóstico gratuito</span></span>
+            </h2>
+            
+            <p class="text-slate-400 font-medium mb-12 italic max-w-2xl mx-auto">
+                Receba um diagnóstico de como automatizar seu atendimento e aumentar suas vendas com IA.
+            </p>
+<form id="lead-form" class="grid md:grid-cols-2 gap-6 text-left">
+    <div class="space-y-2">
+        <label class="text-[10px] font-black uppercase tracking-widest text-[#41ae8a]">Seu Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:border-[#41ae8a] outline-none text-white" style="font-size:16px;">
+    </div>
+
+    <div class="space-y-2">
+        <label class="text-[10px] font-black uppercase tracking-widest text-[#41ae8a]">WhatsApp com DDD</label>
+        <input type="tel" id="phone-lead" name="whatsapp" placeholder="Seu WhatsApp" required class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:border-[#41ae8a] outline-none text-white" style="font-size:16px;">
+    </div>
+
+    <input type="hidden" id="empresa" value="Não Informado">
+    <input type="hidden" id="email" value="lead@sem-email.com">
+
+    <button type="submit" id="btn-submit" class="md:col-span-2 bg-[#41ae8a] hover:bg-[#369675] text-white font-black uppercase py-6 rounded-2xl shadow-xl transition-all hover:scale-[1.02]">
+        Quero meu diagnóstico gratuito →
+    </button>
+ <p class="text-center text-[14px] text-slate-300 mt-2 md:col-span-2">
+    Resposta em menos de 5 minutos após envio
+</p>
+</form>
+
+<script>
+document.getElementById('lead-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const btn = document.getElementById('btn-submit');
+    const originalText = btn.innerText;
+    btn.innerText = "ENVIANDO...";
+    btn.disabled = true;
+
+    // DATA MAP (Mantendo a estrutura exata exigida pelo seu CRM)
+    const data = {
+        name: document.getElementById('nome').value,
+        emailAddress: document.getElementById('email').value,
+        phoneNumber: document.getElementById('phone-lead').value,
+        accountName: document.getElementById('empresa').value,
+        source: "Landing Page"
+    };
+
+    fetch('https://n8n.ideal.ia.br/webhook/crmdenis', {
+        method: 'POST',
+        mode: 'no-cors', // Mantido conforme seu código original
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    })
+    .then(() => {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ 'event': 'form_submission_success' });
+        
+        setTimeout(() => {
+            window.location.href = "obrigado.html";
+        }, 500);
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+        window.location.href = "obrigado.html";
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const badge = document.getElementById('scroll-badge');
+    
+    window.addEventListener('scroll', function() {
+        // Se rolar mais de 200px, ele aparece
+        if (window.scrollY > 200) {
+            badge.style.opacity = "1";
+            badge.style.transform = "translateX(0)";
+            badge.classList.remove('opacity-0');
+        } else {
+            badge.style.opacity = "0";
+            badge.style.transform = "translateX(20px)";
+        }
+    });
+});
+
+
+</script>
+        </div>
+    </div>
+</main>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 800,
+  once: true
+});
+</script>
+
+<!-- STICKY CTA BAR — só aparece no mobile -->
+<div id="sticky-cta-bar">
+    <a href="#diagnostico" class="flex-1 bg-[#41ae8a] text-white font-black uppercase text-sm py-3 px-4 rounded-xl text-center" style="min-height:48px;display:flex;align-items:center;justify-content:center;">
+        Quero meu diagnóstico gratuito →
+    </a>
+</div>
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a id="btn-wpp-float"
+   href="https://wa.me/553136140050?text=Olá!%20Quero%20saber%20mais%20sobre%20atendimento%20com%20IA."
+   target="_blank"
+   title="Fale conosco no WhatsApp"
+   style="position:fixed;bottom:28px;right:28px;z-index:9999;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;animation:wpp-pulse 2s infinite;transition:transform 0.2s ease;"
+   onmouseover="this.style.transform='scale(1.12)'"
+   onmouseout="this.style.transform='scale(1)'"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white">
+        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.472 2.027 7.774L0 32l8.469-2.001A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.784-1.858l-.486-.29-5.028 1.188 1.243-4.9-.317-.502A13.27 13.27 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.987c-.398-.199-2.354-1.162-2.719-1.295-.365-.133-.631-.199-.897.199-.266.398-1.030 1.295-1.263 1.561-.232.266-.465.299-.863.1-.398-.199-1.681-.619-3.202-1.977-1.183-1.056-1.982-2.36-2.214-2.758-.232-.398-.025-.613.175-.811.18-.178.398-.465.597-.698.199-.232.266-.398.398-.664.133-.266.066-.498-.033-.697-.1-.199-.897-2.162-1.229-2.96-.324-.777-.653-.672-.897-.684l-.764-.013c-.266 0-.697.1-.1063.498-.365.398-1.395 1.362-1.395 3.322s1.428 3.854 1.627 4.12c.199.266 2.811 4.291 6.813 6.018.952.411 1.695.657 2.274.841.955.304 1.825.261 2.513.158.767-.114 2.354-.962 2.686-1.891.332-.929.332-1.726.232-1.891-.1-.166-.365-.266-.763-.465z"/>
+    </svg>
+</a>
+
+<footer class="text-center py-6 mt-4">
+    <p class="text-slate-500 text-xs uppercase tracking-widest font-medium">
+        © 2026 Ideal Connecta — Todos os direitos reservados
+    </p>
+</footer>
+
+</body>
+</html>
