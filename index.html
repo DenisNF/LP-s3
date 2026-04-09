@@ -324,8 +324,8 @@ body.hero-bg-ai::before {
             /* WhatsApp float sobe acima do sticky bar */
             #btn-wpp-float { bottom: 76px !important; }
 
-            /* Ativa sticky bar */
-            #sticky-cta-bar { display: flex !important; }
+            /* Ativa sticky bar — controlado pelo JS */
+            #sticky-cta-bar { display: flex; } 
 
             /* H1 mobile override */
             h1 { font-size: 2.5rem !important; }
@@ -368,7 +368,7 @@ body.hero-bg-ai::before {
         <div class="flex items-center justify-center">
             <img src="logo-ideal-branco.svg"
                  alt="Ideal Connecta"
-                 class="h-8 md:h-16 w-auto object-contain">
+                 class="h-10 md:h-20 w-auto object-contain">
         </div>
     </nav>
 
@@ -907,6 +907,29 @@ body.hero-bg-ai::before {
                 }
             });
         });
+
+        // Sticky CTA — esconde no hero e no formulário
+window.addEventListener('load', function() {
+    const stickyCta = document.getElementById('sticky-cta-bar');
+    const diagnostico = document.getElementById('diagnostico');
+
+    if (!stickyCta || !diagnostico) return;
+
+    function updateStickyCta() {
+        const scrollY = window.scrollY;
+        const formTop = diagnostico.offsetTop;
+        const windowH = window.innerHeight;
+
+        if (scrollY < windowH * 0.8 || scrollY + windowH >= formTop + 100) {
+            stickyCta.style.display = 'none';
+        } else {
+            stickyCta.style.display = 'flex';
+        }
+    }
+
+    window.addEventListener('scroll', updateStickyCta);
+    updateStickyCta();
+});
     </script>
 
 </body>
