@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="
     default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval';
-    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.tailwindcss.com https://unpkg.com https://googleads.g.doubleclick.net;
-    connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://n8n.ideal.ia.br https://atm.ideal.ia.br https://googleads.googleapis.com https://www.googleadservices.com https://www.google.com https://www.google.com.br https://googleleads.g.doubleclick.net https://stats.g.doubleclick.net;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' 
+        https://www.googletagmanager.com 
+        https://www.google-analytics.com 
+        https://cdn.tailwindcss.com 
+        https://unpkg.com 
+        https://googleads.g.doubleclick.net
+        https://googleleads.g.doubleclick.net;
+    connect-src 'self' 
+        https://www.google-analytics.com 
+        https://region1.google-analytics.com 
+        https://n8n.ideal.ia.br 
+        https://atm.ideal.ia.br 
+        https://googleads.googleapis.com 
+        https://www.googleadservices.com 
+        https://www.google.com 
+        https://www.google.com.br 
+        https://googleleads.g.doubleclick.net 
+        https://stats.g.doubleclick.net;
     img-src 'self' data: https:;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com;
+    style-src 'self' 'unsafe-inline' 
+        https://fonts.googleapis.com 
+        https://unpkg.com;
     font-src 'self' https://fonts.gstatic.com;
     frame-src https://www.googletagmanager.com;
 ">
