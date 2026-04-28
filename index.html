@@ -59,8 +59,11 @@
     <!-- ============================================================
          CSS & Fonts
     ============================================================ -->
-    <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com" async></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet"></noscript>
     <style>
 
         /* ============================================================
@@ -865,9 +868,8 @@ Seu concorrente não.
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        if (window.innerWidth > 768) {
-    AOS.init({ duration: 800, once: true });
-}
+       AOS.init({ duration: 800, once: true });
+
 
         // Form — Envio para N8N + GTM + redirect
         document.getElementById('lead-form').addEventListener('submit', function(e) {
